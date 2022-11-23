@@ -6,3 +6,14 @@
 - We use these tags in our testng.xml file
 - For example, if we didnt want particular method to run when we trigger our tests, the we can set the test method name insude the exclude tags and it will be out of the scope of execution
 - Thes tags provide aditional flexibility, allowing us to very easily control what tests should and shouldnt run
+
+```python
+# exclude method2 function()
+   <classes>
+     <class name="demo.testng.FirstTest">
+       <methods>
+         <exclude name="method2" />
+       </methods>
+     </class>
+   </classes>
+```

@@ -4,6 +4,10 @@
   <test name="TestOne">
     <classes>
       <class name="demo.testng.FirstTest"/>
+      <class name="demo.testng.SecondTest"/>
+      <class name="demo.testng.ThirdTest"/>
+      <class name="demo.testng.FourthTest"/>
+      <class name="demo.testng.FifthTest"/>
     </classes>
   </test>
 </suite> <!-- Suite -->

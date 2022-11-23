@@ -1,3 +1,4 @@
-# TestNG Tutorial with MAVEN
+# TestNG
 
-This repo was created for reference and to focus on TestNG.
+## Test Execution Flexibility
+

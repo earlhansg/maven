@@ -9,11 +9,11 @@
 
 ```python
 # include method2 function()
-    <classes>
-      <class name="demo.testng.FirstTest">
-        <methods>
-          <include name="method2" />
-        </methods>
-      </class>
-    </classes>
+   <classes>
+     <class name="demo.testng.FirstTest">
+       <methods>
+         <include name="method2" />
+       </methods>
+     </class>
+   </classes>
 ```

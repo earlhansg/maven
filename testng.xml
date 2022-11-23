@@ -5,7 +5,7 @@
     <classes>
       <class name="demo.testng.FirstTest">
         <methods>
-          <include name="method2" />
+          <exclude name="method2" />
         </methods>
       </class>
     </classes>

@@ -1,6 +1,6 @@
-# TestNG Tutorial / INCLUDE
+# TestNG Tutorial / EXCLUDE
 
-## Include Tags ?
+## Exclude Tags ?
 
 - TestNG provides an option to include or exclude Groups, Test Methods, Classes and Packages by using special tags called include or exclude
 - We use these tags in our testng.xml file

@@ -3,7 +3,11 @@
 <suite name="Suite">
   <test name="TestOne">
     <classes>
-      <class name="demo.testng.FirstTest"/>
+      <class name="demo.testng.FirstTest">
+        <methods>
+          <include name="method2" />
+        </methods>
+      </class>
     </classes>
   </test>
 </suite> <!-- Suite -->

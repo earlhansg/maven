@@ -4,7 +4,7 @@
 - if we wanted to run just the "Tablet" related methods, then we can do that by simply amending our testng.xml
 - we can use the <include> tags to run methods that have a particular value in the name
 ```python
-#just the "Tablet" related methods
+# just the "Tablet" related methods
    <test name="TestOne">
     <classes>
      <class name="demo.testng.FirstTest">

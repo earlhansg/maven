@@ -10,7 +10,7 @@
 ### testng.xml
 ```python
 # just run "regression" labeled method
-   <groups>
+   	<groups>
 		<run>
 			<include name="regression" />
 		</run>

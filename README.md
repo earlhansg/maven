@@ -19,6 +19,6 @@
 - the * acts as a wild car character, meaning anything following the Tablet wording will run
 - this is useful because it gives us flexibility in being selective in the tests we choose to run
 ```python
-# just the "Tablet" related methods
+# just the "Tablet" related methods Tablet_login() & Tablet_addItem()
    <include name="Tablet.*" />
 ```

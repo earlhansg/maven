@@ -22,7 +22,7 @@
    @BeforeSuite
 # running test
   @Test
-# the close and quit
+# then close and quit
   @AfterSuite
 ```
 ## Summary of TestNG Annotations

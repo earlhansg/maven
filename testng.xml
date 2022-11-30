@@ -2,6 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="TestOne">
+    <parameter name="email" value="test@test.com"/>
+    <parameter name="password" value="test123"/>
     <classes>
       <class name="demo.testng.FirstTest"/>
     </classes>

@@ -11,8 +11,6 @@
 - for exmaple, we can send a URL address, or a email address or username
 
 ```python
-import foobar
-
 # in test java (FirstTest)
 @Parameters({ "email", "password" })
 	@Test

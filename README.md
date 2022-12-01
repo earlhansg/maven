@@ -5,7 +5,7 @@
 - Data Provider allows us to send more than one set of data to our test cases
 - for example, say we had 3 username and password combinations that we wanted to test with the login functionality of a website
 - you might think we need to run the test invidual 3 times to test each combination
-- Luckily, TestNG provides functionality using the @DataProvider annotation to send more than one set of data at execution
+- luckily, TestNG provides functionality using the @DataProvider annotation to send more than one set of data at execution
 
 ## Using a Multi-Demensional Array
 

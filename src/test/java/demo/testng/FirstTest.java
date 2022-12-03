@@ -5,9 +5,12 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(CustomITestListener.class)
 public class FirstTest {
     WebDriver driver;
 
@@ -32,10 +35,6 @@ public class FirstTest {
 	public void enterPassword() throws InterruptedException {
 		driver.findElement(By.cssSelector("input[name='password']")).sendKeys("test123");
 		Thread.sleep(3000);
-	}
-
-	@Test(dependsOnMethods = { "enterPassword" })
-	public void clickBtn() throws InterruptedException {
-		driver.findElement(By.cssSelector("button#submit-login")).click();
+		Assert.fail();
 	}
 }

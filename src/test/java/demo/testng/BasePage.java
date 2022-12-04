@@ -24,8 +24,6 @@ public class BasePage {
 
 	public BasePage() throws IOException {
 		prop = new Properties();
-		// FileInputStream data = new FileInputStream(
-		// 		"C:\\Users\\EarlHans Geñoso\\Desktop\\Resources\\VSCode\\maven\\src\\test\\java\\demo\\testng\\config.properties");
 		FileInputStream data = new FileInputStream(
 				System.getProperty("user.dir") + "\\src\\test\\java\\demo\\testng\\config.properties");
 		prop.load(data);

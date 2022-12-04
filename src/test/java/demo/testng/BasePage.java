@@ -2,6 +2,7 @@ package demo.testng;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,24 +20,30 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BasePage {
     public static WebDriver driver;
 	private String url;
+	private Properties prop;
+
+	public BasePage() throws IOException {
+		prop = new Properties();
+		// FileInputStream data = new FileInputStream(
+		// 		"C:\\Users\\EarlHans Geñoso\\Desktop\\Resources\\VSCode\\maven\\src\\test\\java\\demo\\testng\\config.properties");
+		FileInputStream data = new FileInputStream(
+				System.getProperty("user.dir") + "\\src\\test\\java\\demo\\testng\\config.properties");
+		prop.load(data);
+	}
 
 	public WebDriver getDriver() throws IOException {
-		Properties prop = new Properties();
-		FileInputStream data = new FileInputStream(
-				"C:\\Users\\EarlHans Geñoso\\Desktop\\Resources\\VSCode\\maven\\src\\test\\java\\demo\\testng\\config.properties");
-		prop.load(data);
-
+		
 		if (prop.getProperty("browser").equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\EarlHans Geñoso\\Desktop\\Resources\\driver_v1\\chromedriver.exe");
+				System.getProperty("user.dir") + "\\src\\drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (prop.getProperty("browser").equals("firefox")) {
 			System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\EarlHans Geñoso\\Desktop\\Resources\\driver_v1\\geckodriver.exe");
+				System.getProperty("user.dir") + "\\src\\drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else {
 			System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\EarlHans Geñoso\\Desktop\\Resources\\driver_v1\\msedgedriver.exe");
+				System.getProperty("user.dir") + "\\src\\drivers\\msedgedriver.exe");
 			driver = new EdgeDriver();
 		}
 

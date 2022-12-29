@@ -52,10 +52,6 @@ public class BasePage {
 	}
 
 	public String getUrl() throws IOException {
-		Properties prop = new Properties();
-		FileInputStream data = new FileInputStream(
-				"C:\\Users\\EarlHans Geñoso\\Desktop\\Resources\\VSCode\\maven\\src\\test\\java\\demo\\testng\\config.properties");
-		prop.load(data);
 		url = prop.getProperty("url");
 		return url;
 	}
